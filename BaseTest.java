@@ -15,6 +15,7 @@ public class BaseTest {
 		logger.info("getWebDriver method started");
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
+		System.out.println("Browser launched");
 		try {
 			Thread.sleep(2000);
 			driver.get("https://www.amazon.in/");
